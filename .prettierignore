@@ -1,0 +1,12 @@
+.npm
+node_modules
+.ash_history
+jest_0
+coverage
+database
+npm-debug.log
+.config
+.vagrant/
+.idea/
+dist
+lib

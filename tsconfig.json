@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "commonjs",
+    "target": "ES2018",
+    "declaration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "lib",
+    "types": ["node","jest"]
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+  ]
+}

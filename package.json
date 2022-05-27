@@ -1,33 +1,33 @@
 {
-  "name": "@signalyticsai/auth",
-  "version": "2.0.5",
-  "description": "Signalytics Auth Package",
+  "name": "@keithics/auth",
+  "version": "3.0.5",
+  "description": "Auth Package",
   "main": "index.js",
   "scripts": {
     "test": "NODE_PATH=./src ./node_modules/.bin/jest --coverage --verbose --runInBand --forceExit --detectOpenHandles",
     "build": "tsc",
     "pretty": "npx prettier --write **/*.{js,ts}",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx && npx prettier --check **/*.{js,ts} && tsc --noEmit",
-    "p": "npm run pretty && npm version patch && npm publish",
+    "p": "npm version patch && npm publish",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint",
+    "preversion": "npm run pretty && npm run lint",
     "version": "npm run pretty && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/SignalyticsAI/auth.git"
+    "url": "git+ssh://git@github.com/keithics/auth.git"
   },
   "author": "keithics",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SignalyticsAI/auth/issues"
+    "url": "https://github.com/keithics/auth/issues"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://github.com/SignalyticsAI/auth#readme",
+  "homepage": "https://github.com/keithics/auth#readme",
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
