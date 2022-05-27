@@ -1,6 +1,6 @@
 {
   "name": "@keithics/auth",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Auth Package",
   "main": "index.js",
   "scripts": {
