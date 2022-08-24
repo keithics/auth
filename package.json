@@ -1,6 +1,6 @@
 {
   "name": "@keithics/auth",
-  "version": "3.0.8",
+  "version": "6.3.0",
   "description": "Auth Package",
   "main": "index.js",
   "scripts": {
@@ -41,6 +41,9 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "jest": "^26.6.3",
+    "lodash": "^4.17.21",
+    "lodash.clone": "^4.5.0",
+    "lodash.foreach": "^4.5.0",
     "prettier": "^2.3.0",
     "pretty-format": "^26.6.2",
     "ts-jest": "^26.5.6",
@@ -50,7 +53,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@keithics/errors": "^3.0.5",
+    "@keithics/errors": "^6.3.1",
     "axios": "^0.26.0",
     "jsonwebtoken": "^8.5.1"
   },

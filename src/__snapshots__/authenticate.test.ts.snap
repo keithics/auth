@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authentication test Should be 👌 if even if the user doesn't have the role because allUsers is true 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "a",
+      "b",
+      "z",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if even if the user role is equal to * 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "*",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if even if the user role is equal to * and allUsers: true 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "*",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if user has ALL a,b and z roles  1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "a",
+      "b",
+      "z",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if user has SOME of the access, common role is b 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "a",
+      "b",
+      "z",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if user has SOME of the access, common role is b and z 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "user",
+    "roles": Array [
+      "a",
+      "b",
+      "z",
+    ],
+  },
+}
+`;
+
+exports[`Authentication test Should be 👌 if user is a superadmin, no roles needed 1`] = `
+Object {
+  "iat": 1654112080,
+  "user": Object {
+    "_id": "61a9143ff6d9d2000dc3bceb",
+    "email": "keith.lumanog@unitedintegral.com",
+    "level": "superadmin",
+  },
+}
+`;

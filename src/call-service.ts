@@ -1,6 +1,6 @@
 import https from 'https';
 import axios from 'axios';
-import { ErrorOther, ErrorValidation } from '@keithics/errors/lib/assert';
+import { ArkErrorOther, ArkErrorValidation } from '@keithics/errors/lib/ark.assert';
 
 /**
  * Call Admin Service, service to service API call
@@ -35,10 +35,10 @@ export async function callService(adminJWT, data, url, method = 'post', sendErro
     serviceResponse = data;
   } catch (e) {
     if (e.response?.status === 422) {
-      return Promise.reject(new ErrorValidation(e.response.data.message));
+      return Promise.reject(new ArkErrorValidation(e.response.data.message));
     } else {
       // by default, it will go directly to errorHandler
-      const error = sendError ? new ErrorOther("Can't connect to Admin Service API " + url) : e;
+      const error = sendError ? new ArkErrorOther("Can't connect to Admin Service API " + url) : e;
       return Promise.reject(error);
     }
   }

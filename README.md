@@ -1,12 +1,12 @@
-#Signalytics Auth Package
+# Auth Package
 
 Package for authentication, includes JWT for both admin and regular users
 
-#Requirements
+# Requirements
 1. GitHub personal tokens
 2. You must be logged-in in order to run the commands below
 
-##Commands
+## Commands
 
 ### Auto Patching Version
 `npm version patch`

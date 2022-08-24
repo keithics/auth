@@ -7,6 +7,7 @@ const config: Config.InitialOptions = {
     '.(ts|tsx)': 'ts-jest',
   },
   testEnvironment: 'node',
+  setupFilesAfterEnv: ['<rootDir>/src/jest/jest.serializer.ts'],
   modulePathIgnorePatterns: ['/lib/', '/\\.npm/']
 };
 
